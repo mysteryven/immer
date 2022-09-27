@@ -45,7 +45,8 @@
     "publish-docs": "cd website && GIT_USER=mweststrate USE_SSH=true yarn docusaurus deploy",
     "start": "cd website && yarn start",
     "test:size": "yarn build && yarn import-size --report . produce enableES5 enableMapSet enablePatches enableAllPlugins",
-    "test:sizequick": "tsdx build --name immer --format esm && yarn import-size . produce"
+    "test:sizequick": "tsdx build --name immer --format esm && yarn import-size . produce",
+    "debug": "vite"
   },
   "husky": {
     "hooks": {
@@ -99,6 +100,7 @@
     "spec.ts": "^1.1.0",
     "ts-jest": "^25.2.0",
     "tsdx": "^0.12.3",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "vite": "^3.1.3"
   }
 }

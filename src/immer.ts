@@ -6,18 +6,21 @@ import {
 	Immutable
 } from "./internal"
 
-export {
+export type {
 	Draft,
-	Immutable,
 	Patch,
+	Immutable,
 	PatchListener,
+} from './internal'
+
+export {
 	original,
 	current,
 	isDraft,
 	isDraftable,
-	NOTHING as nothing,
+	freeze,
 	DRAFTABLE as immerable,
-	freeze
+	NOTHING as nothing,
 } from "./internal"
 
 const immer = new Immer()
